@@ -11,5 +11,4 @@ jobs:
       - name: echo node version
         run: |
           node -v
-          nvm -v
-          nvm use
+          npm -v

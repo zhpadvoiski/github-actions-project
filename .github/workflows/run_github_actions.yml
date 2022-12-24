@@ -16,3 +16,16 @@ jobs:
           who-to-greet: Eugene
       - name: Log last greeting time
         run: echo ${{ steps.greet.outputs.time }}
+  console-log-env:
+    name: Console log environment variables
+    runs-on: ubuntu-latest
+    steps:
+      - name: github
+        run: echo ${{ github }}
+      - name: token
+        run: echo ${ steps }}
+      - name: "github variable"
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          printenv

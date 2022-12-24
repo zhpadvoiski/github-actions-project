@@ -1,0 +1,19 @@
+array:
+  - one
+  - two: two
+    three: three
+    four:
+      - a
+        b
+  - three: |
+      some long text asdhjfiu asdhfi asdjf askdjfasdfj asdhfia
+      asdnkfldas fas fas 
+      asdf asf asdf asf 
+      asdf asd fads
+      fasdf asd fadsf asdf
+  - three: >
+      some long text asdhjfiu asdhfi asdjf askdjfasdfj asdhfia
+      asdnkfldas fas fas 
+      asdf asf asdf asf 
+      asdf asd fads
+      fasdf asd fadsf asdf

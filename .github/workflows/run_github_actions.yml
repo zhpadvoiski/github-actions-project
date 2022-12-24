@@ -23,7 +23,7 @@ jobs:
       - name: github
         run: echo ${{ github }}
       - name: token
-        run: echo ${ steps }}
+        run: echo ${{ steps }}
       - name: "github variable"
         run: |
           echo $GITHUB_SHA

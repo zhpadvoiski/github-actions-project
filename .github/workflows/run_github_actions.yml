@@ -15,7 +15,7 @@ jobs:
         with:
           who-to-greet: Eugene
       - name: Log last greeting time
-        run: echo ${{ steps.greet.outputs.time }}
+        run: echo "${{ steps.greet.outputs.time }}"
   console-log-env:
     name: Console log environment variables
     runs-on: ubuntu-latest

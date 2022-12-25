@@ -1,0 +1,14 @@
+name: Workflow with dispatch action
+
+on:
+  repository_dispatch:
+    types: [build]
+
+jobs:
+  simple-job:
+    name: Simple Console log
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: log node version
+        run: node -v

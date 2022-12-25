@@ -3,6 +3,7 @@ name: Push random file
 on:
   pull_request:
     branches: [master]
+    types: [synchronize]
 
 jobs:
   push-random-file:

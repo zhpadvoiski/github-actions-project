@@ -13,4 +13,4 @@ jobs:
       - name: log node version
         run: node -v
       - name: payload
-        run: echo ${{ github.event.action_payload.env }}
+        run: echo ${{ github.event.client_payload.env }}

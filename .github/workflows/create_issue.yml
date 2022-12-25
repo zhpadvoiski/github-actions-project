@@ -2,7 +2,7 @@ name: Create issue from commit
 
 on:
   pull_request:
-    types: [opened, edited]
+    types: [opened, synchronize]
 
 env:
   MY_ENV: my env variable

@@ -1,0 +1,15 @@
+name: Log context env
+
+on: [pull_request]
+
+jobs:
+  log-context:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Log github
+        run: echo "${{ toJson(github) }}"
+      - name: Log secrets
+        run: echo "${{ toJson(secrets) }}"
+      - name: Log steps
+        run: echo "${{ toJson(steps) }}"

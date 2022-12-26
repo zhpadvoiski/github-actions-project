@@ -13,3 +13,8 @@ jobs:
         run: echo "${{ toJson(secrets) }}"
       - name: Log steps
         run: echo "${{ toJson(steps) }}"
+  functions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: contains
+        run: echo "${{ contains('hello world', 'hello') }}"

@@ -2,8 +2,7 @@ name: Push random file
 
 on:
   pull_request:
-    branches: [master]
-    types: [synchronize]
+    types: [opened]
 
 jobs:
   push-random-file:

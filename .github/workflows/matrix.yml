@@ -1,8 +1,6 @@
 name: Run Worflow on matrix
 
-on:
-  pull_request:
-    types: [opened, synchronize]
+on: [pull_request]
 
 jobs:
   run-matrix:
@@ -12,12 +10,12 @@ jobs:
         node_version: [6, 7, 8]
         exclude:
           - os: ubuntu-latest
-            node-version: 7
+            node_version: 7
           - os: windows-latest
-            node-version: 8
+            node_version: 8
         include:
           - os: ubuntu-latest
-            node-version: 10
+            node_version: 10
             is_ubuntu_10: true
       fail-fast: true
     runs-on: ${{ matrix.os }}
